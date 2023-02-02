@@ -15,6 +15,9 @@ export default async function middleware(req) {
   const xForwardedHost = req.headers.get("x-forwarded-host");
   console.log("xForwardedHost :", xForwardedHost)
 
+  const xMSOriginalURL = req.headers.get("x-ms-original-url");
+  console.log("xMsOriginalURL :", xMSOriginalURL);
+
   // If localhost, assign the host value manually
   // If prod, get the custom domain/subdomain value by removing the root URL
   // (in the case of "test.vercel.app", "vercel.app" is the root URL)
