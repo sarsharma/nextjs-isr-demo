@@ -12,6 +12,10 @@ module.exports = {
             key: "Content-Range",
             value: "bytes 200-1000/67589",
           },
+          {
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains",
+          },
         ],
       },
     ];
